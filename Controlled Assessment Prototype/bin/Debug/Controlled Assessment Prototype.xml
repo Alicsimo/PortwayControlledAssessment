@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Controlled Assessment Prototype
+</name>
+</assembly>
+<members>
+<member name="T:Controlled_Assessment_Prototype.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Controlled_Assessment_Prototype.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Controlled_Assessment_Prototype.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Controlled_Assessment_Prototype.My.Resources.Resources.Portway_Logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Controlled_Assessment_Prototype.My.Resources.Resources.Refresh_Button">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Controlled_Assessment_Prototype.My.Resources.Resources.Refresh_JPEG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
