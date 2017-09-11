@@ -6,15 +6,19 @@ Public Class ClsDBConnector
     Dim da As OleDb.OleDbDataAdapter
     Dim ds As New DataSet
     Sub connect(x)
-        con.ConnectionString = "Provider=SQLOLEDB; " &
+        If My.Computer.FileSystem.FileExists(x) Then
+            dbProvider = "PROVIDER=Microsoft.ACE.OLEDB.12.0;"
+            dbSource = "Data Source = " & x
+            con.ConnectionString = dbProvider & dbSource
+            Console.WriteLine ("Connected to local database.")
+        Else
+            con.ConnectionString = "Provider=SQLOLEDB; " &
                               "Server=tcp:portway-db.database.windows.net,1433; " &
                               "Database=portway-db; " &
                               "Uid=alexh@portway-db; " &
                               "Pwd=Warhammer40k;"
-
-        ' dbProvider = "PROVIDER=Microsoft.ACE.OLEDB.12.0;"
-        ' dbSource = "Data Source = " & x
-        ' con.ConnectionString = dbProvider & dbSource
+            Console.WriteLine("Connected to remote database.")
+        End If
         con.Open()
     End Sub
     Sub close()
